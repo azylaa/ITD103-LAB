@@ -13,20 +13,27 @@ function Users() {
     }, []);
 
     useEffect(() => {
-        // Filter the data based on search query
-        const filtered = data.filter(user =>
-            Object.values(user).some(value =>
-                typeof value === 'string' && value.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                typeof value === 'number' && value.toString().includes(searchQuery)
-            )
-        );
-        setFilteredData(filtered);
+        // Filter the data based on search query if search query is not empty
+        console.log("Search query:", searchQuery);
+        if (searchQuery.trim() !== '') {
+            const filtered = data.filter(user =>
+                Object.values(user).some(value =>
+                    typeof value === 'string' && value.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                    typeof value === 'number' && value.toString().includes(searchQuery)
+                )
+            );
+            console.log("Filtered data:", filtered);
+            setFilteredData(filtered);
+        } else {
+            console.log("Search query is empty, displaying all data");
+            setFilteredData(data); // If search query is empty, display all data
+        }
     }, [searchQuery, data]);
 
     const fetchData = () => {
         axios.get('http://localhost:3001')
             .then(res => {
-                console.log(res);
+                console.log("Fetched data:", res.data);
                 setData(res.data);
             })
             .catch(err => console.log(err));
