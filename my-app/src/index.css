@@ -11,3 +11,83 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.title{
+  /* Add your desired background color */
+  background-color: #f0f0f0;
+  /* Add padding */
+  padding: 10px 20px;
+  /* Add border radius */
+  border-radius: 5px;
+  /* Add box shadow for depth */
+  box-shadow: 0px 0px 10px rgba(87, 82, 82, 0.1);
+  /* Add text alignment */
+  text-align: center;
+  /* Add font size */
+  font-size: 20px;
+  /* Add font weight */
+  font-weight: bold;
+  /* Add text color */
+  color: #333;
+}
+
+.table{
+ /* Add border radius */
+ border-radius: 5px;
+  /* Add box shadow for depth */
+  box-shadow: 0px 0px 10px rgba(16, 14, 14, 0.1);
+}
+
+.box {
+  /* Set position to fixed to position the box relative to the viewport */
+  position: fixed;
+  /* Set top, right, bottom, and left to 0 to make the box cover the whole screen */
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  /* Add your desired box shadow */
+  box-shadow: 0px 0px 10px rgba(16, 14, 14, 0.1);
+  background: white;
+}
+
+.box1 {
+  /* Set position to fixed to position the box relative to the viewport */
+  position: fixed;
+  /* Set top, right, bottom, and left to 0 to make the box cover the whole screen */
+  top: 150px;
+  right: 500px;
+  bottom: 150px;
+  left: 500px;
+  /* Add your desired box shadow */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border:#000000;
+  border-style:double;
+}
+
+.b {
+  /* Set top, right, bottom, and left to 0 to make the box cover the whole screen */
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-bottom: 100px;
+  margin-left: 40px;
+  background: white;
+}
+
+.submit-button {
+  margin-top: 10px;
+  margin-left: 550px;
+}
+
+.container{
+  background:#f0f0f0;
+}
+
+.h2{
+    /* Add font size */
+    font-size: 20px;
+    /* Add font weight */
+    font-weight: bold;
+    /* Add text color */
+    color: #333;
+}

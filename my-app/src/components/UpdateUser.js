@@ -41,67 +41,69 @@ function UpdateUser() {
     };
 
     return (
-        <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
-            <div className="w-50 bg-white rounded p-3">
-                <form onSubmit={handleUpdate}>
-                    <h2>Update User</h2>
-                    <div className="mb-2">
-                        <label htmlFor="">Name</label>
-                        <input
-                            type="text"
-                            placeholder="Enter Name"
-                            className="form-control"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                        />
-                    </div>
+        <div className="container">
+            <div className="box1">
+                <div className="b">
+                    <form onSubmit={handleUpdate}>
+                        <h2>Update User</h2>
+                        <div className="mb-2">
+                            <label htmlFor="">Name</label>
+                            <input
+                                type="text"
+                                placeholder="Enter Name"
+                                className="form-control"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                            />
+                        </div>
 
-                    <div className="mb-2">
-                        <label htmlFor="">Email</label>
-                        <input
-                            type="email"
-                            placeholder="Enter email"
-                            className="form-control"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                        />
-                    </div>
+                        <div className="mb-2">
+                            <label htmlFor="">Email</label>
+                            <input
+                                type="email"
+                                placeholder="Enter email"
+                                className="form-control"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                        </div>
 
-                    <div className="mb-2">
-                        <label htmlFor="">Age</label>
-                        <input
-                            type="text"
-                            placeholder="Enter Age"
-                            className="form-control"
-                            value={age}
-                            onChange={(e) => setAge(e.target.value)}
-                        />
-                    </div>
+                        <div className="mb-2">
+                            <label htmlFor="">Age</label>
+                            <input
+                                type="text"
+                                placeholder="Enter Age"
+                                className="form-control"
+                                value={age}
+                                onChange={(e) => setAge(e.target.value)}
+                            />
+                        </div>
 
-                    <div className="mb-2">
-                        <label htmlFor="">Organization</label>
-                        <input
-                            type="text"
-                            placeholder="Enter Organization"
-                            className="form-control"
-                            value={org}
-                            onChange={(e) => setOrg(e.target.value)}
-                        />
-                    </div>
+                        <div className="mb-2">
+                            <label htmlFor="">Organization</label>
+                            <input
+                                type="text"
+                                placeholder="Enter Organization"
+                                className="form-control"
+                                value={org}
+                                onChange={(e) => setOrg(e.target.value)}
+                            />
+                        </div>
 
-                    <div className="mb-2">
-                        <label htmlFor="">Talent</label>
-                        <input
-                            type="text"
-                            placeholder="Enter Talent"
-                            className="form-control"
-                            value={talent}
-                            onChange={(e) => setTalent(e.target.value)}
-                        />
-                    </div>
+                        <div className="mb-2">
+                            <label htmlFor="">Skill/Talent</label>
+                            <input
+                                type="text"
+                                placeholder="Enter Skill/Talent"
+                                className="form-control"
+                                value={talent}
+                                onChange={(e) => setTalent(e.target.value)}
+                            />
+                        </div>
 
-                    <button className="btn btn-success">Update</button>
-                </form>
+                        <button className="btn btn-success submit-button">Update</button>
+                    </form>
+                </div>
             </div>
         </div>
     );

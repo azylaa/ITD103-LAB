@@ -49,8 +49,11 @@ function Users() {
     };
 
     return (
-        <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
-            <div className="w-75 bg-white rounded p-3">
+        <div className="container">
+            <div className="box">
+                 <div className="title">
+                 Student Organizations Talent and Skill Index
+                </div>
                 <div className="d-flex align-items-center justify-content-between mb-3">
                     <Link to="/create" className="btn btn-success btn-sm">
                         Add +
@@ -60,7 +63,7 @@ function Users() {
                         value={searchQuery}
                         onChange={e => setSearchQuery(e.target.value)}
                         placeholder="Search..."
-                        className="form-control w-50"
+                        className="form-control w-25"
                     />
                 </div>
                 <table className="table">
@@ -70,7 +73,7 @@ function Users() {
                             <th>Email</th>
                             <th>Age</th>
                             <th>Organization</th>
-                            <th>Talent</th>
+                            <th>Skill/Talent</th>
                             <th>Action</th>
                         </tr>
                     </thead>
