@@ -42,7 +42,7 @@ function CreateUser(){
                             <label htmlFor= "">Email</label>
                             <input
                                 type="email"
-                                placeholder="Enter email"
+                                placeholder="Enter Email"
                                 className="form-control"
                                 onChange={(e) => setEmail(e.target.value)}
                             />
